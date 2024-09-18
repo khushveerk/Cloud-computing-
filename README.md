@@ -124,6 +124,7 @@ Containers are an abstraction at the app layer that packages code and dependenci
 
 NGINX is a high-performance web server and reverse proxy server that is widely used for serving web applications, handling HTTP and HTTPS requests, and load balancing traffic. It is known for its speed, efficiency, and ability to handle a large number of concurrent connections with low resource usage.
 
+
 # HOW TO INSTALL NGINX :-
 In this tutorial, we’ll show you how to install NGINX on Linux.
 # Open your Linux machine and run an update using the command below:
