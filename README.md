@@ -35,6 +35,32 @@ Containers are an abstraction at the app layer that packages code and dependenci
 
 ![Screenshot_2024_0918_124201](https://github.com/user-attachments/assets/6f6cd7ae-eee7-4b0b-b614-313b4e8000bd)
 
+# NGINX:-
+
+NGINX is a high-performance web server and reverse proxy server that is widely used for serving web applications, handling HTTP and HTTPS requests, and load balancing traffic. It is known for its speed, efficiency, and ability to handle a large number of concurrent connections with low resource usage.
+
+# HOW TO INSTALL NGINX :-
+In this tutorial, we’ll show you how to install NGINX on Linux. Open your Linux machine and run an update using the command below:
+
+sudo apt-get update
+Next, run this command:
+
+sudo apt-get install nginx
+Then, enable your firewall with the following:
+
+sudo ufw enable
+To verify NGINX is installed, run the following:
+
+nginx -v
+You can run the command below to find out if NGINX is running:
+
+sudo ufw status
+After running this command, you should see the following:
+
+status: active
+To check whether your NGINX server is working fine, run the following:
+
+sudo systemctl status nginx
 
 # using EC2 in aws:-
 
