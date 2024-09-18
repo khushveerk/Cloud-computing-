@@ -147,17 +147,4 @@ Linking the Container to the Local Filesystem
 
 open your public ip in browser you will see as the content as your html code
 
-# Using Your Own Nginx Configuration File
-cd ~/docker-nginx
-docker cp docker-nginx:/etc/nginx/conf.d/default.conf default.conf
-Copy the Nginx config directory into your project folder
 
-docker stop docker-nginx
-docker rm docker-nginx
-to rebuild the container stop the container then remove it
-
-docker run --name docker-nginx -p 80:80 -v ~/docker-nginx/html:/usr/share/nginx/html -v ~/docker-nginx/default.conf:/etc/nginx/conf.d/default.conf -d nginx
-This command links the custom website pages to the container.
-
-docker restart docker-nginx
-you need to restart your container to reflect changes on the associated pages.
