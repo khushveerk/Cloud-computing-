@@ -347,80 +347,7 @@ In cloud computing, orchestration is the process of coordinating and automating 
 
 ![Screenshot_2024_0923_183854](https://github.com/user-attachments/assets/6756ddf2-6d9d-4b0d-a4d1-a7aee4ef3afd)
 
-# commands to install minikube :-
-All the following commands are to be written on putty ,so first make sure you are having putty on your system .
 
--then use the following commands :- 
-
-curl -sL https://github.com/ShubhamTatvamasi/docker-install/raw/master/docker-install.sh | bash
-
-sudo usermod -aG docker $USER
-
-
-
-newgrp docker
-
-
-
-sudo snap install kubectl --classic
-
-
-
-kubectl version --client
-
-
-
-curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
-
-
-
-sudo install minikube-linux-amd64 /usr/local/bin/minikube
-
-
-
-minikube version
-
-
-
-
-
-minikube start --driver=docker
-
-
-# If you encounter root privileges error, run:
-
-minikube start --driver=docker --force
-
-minikube status
-
-kubectl cluster-info
-
-kubectl config view
-
-kubectl get nodes
-
-kubectl get pods
-
-minikube dashboard
-
-
-# links for these commands :-
-(site from which these links are drawn)
-
-https://medium.com/@subhampradhan966/setup-kubernetes-kubectl-and-minikube-on-ubuntu-22-04-lts-ca9e39c35d8a
-
-https://www.linuxbuzz.com/install-minikube-on-ubuntu/
-
- # for dashboard 
- minikube dashboard --url
-
- kubectl proxy --address='0.0.0.0' --disable-filter=true &
-
- http://server_ip:8001/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy/
-
-
- #in browser replace server ip with public ip
- 
 # USING MINIKUBE IN AWS
 
 --First open aws search EC2 then Launch Instance and select 22.04 AMI then select t2.xlarge instance type then select keypair then configure storage to 30 GB then enable all traffic in network and Launch.
@@ -516,13 +443,18 @@ minikube addons enable ingress
 
 minikube dashboard --url**
 
---it will get the url and run the dashboard of MiniKube
+# it will get the url and run the dashboard of MiniKube
+
 
 kubectl proxy --address='0.0.0.0' --disable-filter=true &
 
+
 --This will enable port :8001 to access it on your public ip
 
+
 http://server_ip:8001/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy/#/workloads?namespace=default
+
+# in browser replace server ip with public ip
 
 # Now go to above link and replace server_ip with your public ip and it will show you like :
 
