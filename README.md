@@ -148,21 +148,27 @@ In this tutorial, we’ll show you how to install NGINX on Linux.
 # Open your Linux machine and run an update using the command below:
 
 sudo apt-get update
+
 Next, run this command:
 
 sudo apt-get install nginx
+
 Then, enable your firewall with the following:
 
 sudo ufw enable
+
 To verify NGINX is installed, run the following:
 
 nginx -v
+
 You can run the command below to find out if NGINX is running:
 
 sudo ufw status
+
 After running this command, you should see the following:
 
 status: active
+
 To check whether your NGINX server is working fine, run the following:
 
 sudo systemctl status nginx
@@ -255,6 +261,7 @@ docker run --name docker-nginx -p 80:80 nginx
 
 --now this will show this on your public ip
 
+![Screenshot_2024_0923_210801](https://github.com/user-attachments/assets/12ed503f-9c71-4c80-bcb3-468c989c0258)
 
 --In your terminal, enter CTRL+C to stop the container from running.
 
