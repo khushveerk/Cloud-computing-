@@ -264,3 +264,61 @@ open your public ip in browser you will see as the content as your html code
 
 # Orchestration:- 
 
+
+curl -sL https://github.com/ShubhamTatvamasi/docker-install/raw/master/docker-install.sh | bash
+
+sudo usermod -aG docker $USER
+
+
+
+newgrp docker
+
+
+
+sudo snap install kubectl --classic
+
+
+
+kubectl version --client
+
+
+
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+
+
+
+sudo install minikube-linux-amd64 /usr/local/bin/minikube
+
+
+
+minikube version
+
+
+
+
+
+minikube start --driver=docker
+
+# If you encounter root privileges error, run:
+
+minikube start --driver=docker --force
+
+minikube status
+
+kubectl cluster-info
+
+kubectl config view
+
+kubectl get nodes
+
+kubectl get pods
+
+minikube dashboard
+
+
+
+
+
+https://medium.com/@subhampradhan966/setup-kubernetes-kubectl-and-minikube-on-ubuntu-22-04-lts-ca9e39c35d8a
+
+https://www.linuxbuzz.com/install-minikube-on-ubuntu/
