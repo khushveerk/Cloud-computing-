@@ -301,7 +301,10 @@ cd ~/docker-nginx/html
 
 vi index.html
 
-[now press i and write your code in html ]
+[now press i and write your code in html like ]
+
+
+![Screenshot_2024_0923_211405](https://github.com/user-attachments/assets/7cd1afd2-b42e-43c1-94ed-86a1f1ebedf9)
 
 -then press ctrl+c then shift+colon then write wq and enter
 
@@ -311,6 +314,28 @@ Linking the Container to the Local Filesystem
 
 open your public ip in browser you will see as the content as your html code
 # here you go 👏🏻
+
+# Using Your Own Nginx Configuration File
+
+cd ~/docker-nginx
+
+docker cp docker-nginx:/etc/nginx/conf.d/default.conf default.conf
+
+--Copy the Nginx config directory into your project folder
+
+docker stop docker-nginx 
+
+docker rm docker-nginx
+
+--to rebuild the container stop the container then remove it
+
+docker run --name docker-nginx -p 80:80 -v ~/docker-nginx/html:/usr/share/nginx/html -v ~/docker-nginx/default.conf:/etc/nginx/conf.d/default.conf -d nginx
+
+--This command links the custom website pages to the container.
+
+docker restart docker-nginx
+
+--you need to restart your container to reflect changes on the associated pages.
 
 # Orchestration:- 
 
@@ -392,6 +417,113 @@ https://www.linuxbuzz.com/install-minikube-on-ubuntu/
  kubectl proxy --address='0.0.0.0' --disable-filter=true &
 
  http://server_ip:8001/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy/
- 
+
+
  #in browser replace server ip with public ip
  
+# USING MINIKUBE IN AWS
+
+--First open aws search EC2 then Launch Instance and select 22.04 AMI then select t2.xlarge instance type then select keypair then configure storage to 30 GB then enable all traffic in network and Launch.
+
+--Now connect it with putty and login into it by writing ubuntu
+
+--Now put some commands
+
+
+curl -sL https://github.com/ShubhamTatvamasi/docker-install/raw/master/docker-install.sh | bash
+
+--it will install docker
+
+
+sudo usermod -aG docker $USER
+
+newgrp docker
+
+--it will Add your local user to docker group so that your local user run docker commands
+
+
+sudo snap install kubectl --classic
+
+--it will intall kubernetes
+
+
+kubectl version --client
+
+--it checks the version
+
+#Installing Minikube
+
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+
+
+sudo install minikube-linux-amd64 /usr/local/bin/minikube
+
+minikube version
+
+--it checks its version
+
+#Starting Minikube with Docker Driver
+
+minikube start --driver=docker
+
+# If you encounter root privileges error, run:
+
+
+minikube start --driver=docker --force
+
+minikube status
+
+--it checks its status
+
+
+kubectl cluster-info
+
+--it checks cluster info
+
+
+kubectl config view
+
+--it will show the config
+
+
+kubectl get nodes
+
+--it will display nodes in it
+
+kubectl get pods
+
+--it will show pods in it
+
+kubectl create deployment nginx-web --image=nginx
+
+kubectl expose deployment nginx-web --type NodePort --port=80
+
+kubectl get deployment,pod,svc
+
+--it will deploy a sample nginx deployment
+
+
+minikube addons list
+
+--It will display all addons
+
+
+minikube addons enable dashboard
+
+minikube addons enable ingress
+
+--this enables these addons
+
+minikube dashboard --url**
+
+--it will get the url and run the dashboard of MiniKube
+
+kubectl proxy --address='0.0.0.0' --disable-filter=true &
+
+--This will enable port :8001 to access it on your public ip
+
+http://server_ip:8001/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy/#/workloads?namespace=default
+
+# Now go to above link and replace server_ip with your public ip and it will show you like :
+
+
