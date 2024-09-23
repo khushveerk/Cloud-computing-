@@ -44,10 +44,7 @@ A Docker image is composed of multiple layers stacked on top of each other. Each
 To install Docker on a remote server using PuTTY, you'll first need to ensure you have access to a Linux server (like Ubuntu, CentOS, etc.) via SSH. Here's a step-by-step guide:
 
 # Step 1:Connect to Your Server
-Open PuTTY.
-Enter the hostname or IP address of your server.
-Click "Open" to initiate the connection.
-Log in with your username and password.
+
 
 # Step 2: Update Your Package Index
 Before installing Docker, it’s a good idea to update the package index:
@@ -128,6 +125,7 @@ NGINX is a high-performance web server and reverse proxy server that is widely u
 
 # HOW TO INSTALL NGINX :-
 In this tutorial, we’ll show you how to install NGINX on Linux.
+
 # Open your Linux machine and run an update using the command below:
 
 sudo apt-get update
@@ -152,61 +150,67 @@ sudo systemctl status nginx
 
 # using EC2 in aws:-
 
-First open aws search EC2 then Launch Instance and there select keypair in putty then download it
+-First open aws search EC2 then Launch Instance and there select keypair in putty then download it
 
-after that Launch it and run putty and paste public id on HOST NAME and open that downloaded key pair for putty in SSH then Auth then Credentials and open there
+-after that Launch it and run putty and paste public id on HOST NAME and open that downloaded key pair for putty in SSH then Auth then Credentials and open there
 
-after that run it and write username as ubuntu as selected os and then type following commands
+-after that run it and write username as ubuntu as selected os and then type following commands
 
 sudo apt update
+
 sudo apt install apache2
-to install a web server on ip then
+[to install a web server on ip then]
 
 sudo su
-for convert $ into # for getting admin role then
+[for convert $ into # for getting admin role then]
 
 cd /var/www/html/
 then
 
 ls
-for list of html file in it
+[for list of html file in it]
 
 then copy that html file name and write
 
 rm index.html
-rm means remove command
+[rm means remove command]
 
 vi index.html
-this will open a notepad like and write html code there like (vi is editor) -
+[this will open a notepad like and write html code there like (vi is editor) -]
 
 then press ctrl+c then shift+colon then write wq and enter
 
 now copy your public ip and paste it on browser you will see the texts written by you (by using html above)
 
+# congratulations yo got it 👏🏻 🎉 
+
 # USING CONTAINER IN VM and adding nginx server by Docker:- 
 
-First open aws search EC2 then Launch Instance and there select keypair in putty then download it
+-First open aws search EC2 then Launch Instance and there select keypair in putty then download it
 
-after that edit network setting and click on add security group rule and select TCP,UDP,ALL TRAFFIC AND SELECT EVERYWHERE SOURCE TYPE IN THEM then Launch it and run putty and paste public id on HOST NAME and open that downloaded key pair for putty in SSH then Auth then Credentials and open there
+-after that edit network setting and click on add security group rule and select TCP,UDP,ALL TRAFFIC AND SELECT EVERYWHERE SOURCE TYPE IN THEM then Launch it and run putty and paste public id on HOST NAME and open that downloaded key pair for putty in SSH then Auth then Credentials and open there
 
-after that run it and write username as ubuntu as selected os and then type following commands
+-after that run it and write username as ubuntu as selected os and then type following commands
 
 curl -sL https://github.com/ShubhamTatvamasi/docker-install/raw/master/docker-install.sh | bash
-this will install and run docker in your vm
+
+[this will install and run docker in your vm]
 
 newgrp docker
-this command will help us to use docker
+
+[this command will help us to use docker]
 
 docker ps
-this will list docker
+[this will list docker]
 
 docker --version
-this will display the version of docker installed
 
-now installing nginx
+[this will display the version of docker installed]
+
+[now installing nginx]
 docker pull nginx
 
-You can download Nginx from a pre-built Docker image, with a default Nginx configuration, by above command. This downloads all the necessary components for the container.
+-You can download Nginx from a pre-built Docker image, with a default Nginx configuration, by above command. This downloads all the necessary components for the container.
 
 docker run --name docker-nginx -p 80:80 nginx
 
@@ -223,47 +227,62 @@ nginx is the name of the image on Docker Hub.
 now this will show this on your public ip
 
 In your terminal, enter CTRL+C to stop the container from running.
+
 docker ps -a
-verify the container status with this command
+
+[verify the container status with this command]
 
 docker rm docker-nginx
-Remove the existing container
+
+[Remove the existing container]
 
 docker run --name docker-nginx -p 80:80 -d nginx
 
-Create a new, detached Nginx container,By attaching the -d flag, you are running this container in the background.
+-Create a new, detached Nginx container,By attaching the -d flag, you are running this container in the background.
 
 docker ps
-this will obtain info about your container
+
+[this will obtain info about your container]
 
 docker stop docker-nginx
-Stop the container
+
+[Stop the container]
 
 docker rm docker-nginx
-remove the container
+
+[remove the container]
 
 # Building a Web Page to Serve on Nginx
 
 mkdir -p ~/docker-nginx/html
 
-Create a new directory for your website content within the home directory
+-Create a new directory for your website content within the home directory
 
 cd ~/docker-nginx/html
-by this you navigate into this
+
+[by this you navigate into this]
 
 vi index.html
-now press i and write your code in html 
 
-then press ctrl+c then shift+colon then write wq and enter
+[now press i and write your code in html ]
+
+-then press ctrl+c then shift+colon then write wq and enter
 
 docker run --name docker-nginx -p 80:80 -d -v ~/docker-nginx/html:/usr/share/nginx/html nginx
 
 Linking the Container to the Local Filesystem
 
 open your public ip in browser you will see as the content as your html code
+# here you go 👏🏻
 
 # Orchestration:- 
 
+In cloud computing, orchestration is the process of coordinating and automating the management of applications, tools, and infrastructure across multiple clouds
+
+# commands to install minikube :-
+
+
+-then 7se the following commands :- 
 
 curl -sL https://github.com/ShubhamTatvamasi/docker-install/raw/master/docker-install.sh | bash
 
@@ -299,6 +318,7 @@ minikube version
 
 minikube start --driver=docker
 
+
 # If you encounter root privileges error, run:
 
 minikube start --driver=docker --force
@@ -316,8 +336,7 @@ kubectl get pods
 minikube dashboard
 
 
-
-
+# links for these commands :-
 
 https://medium.com/@subhampradhan966/setup-kubernetes-kubectl-and-minikube-on-ubuntu-22-04-lts-ca9e39c35d8a
 
@@ -330,5 +349,5 @@ https://www.linuxbuzz.com/install-minikube-on-ubuntu/
 
  http://server_ip:8001/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy/
  
- # in browser replace server ip with public ip
+ #in browser replace server ip with public ip
  . 
