@@ -394,4 +394,4 @@ https://www.linuxbuzz.com/install-minikube-on-ubuntu/
  http://server_ip:8001/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy/
  
  #in browser replace server ip with public ip
- . 
+ 
