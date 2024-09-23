@@ -47,22 +47,27 @@ To install Docker on a remote server using PuTTY, you'll first need to ensure yo
 
 
 # Step 2: Update Your Package Index
+
 Before installing Docker, it’s a good idea to update the package index:
 
 sudo apt update
 
 # Step 3:Install Prerequisites
+
 For Ubuntu, install the required packages:
 
 sudo apt install apt-transport-https ca-certificates curl software-properties-common
+
 For CentOS, run:
 
 sudo yum install -y yum-utils
 
 # Step 4: Add Docker’s Official GPG Key
+
 For Ubuntu:
 
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
 For CentOS:
 
 sudo rpm --import https://download.docker.com/linux/centos/gpg
@@ -71,40 +76,54 @@ sudo rpm --import https://download.docker.com/linux/centos/gpg
 For Ubuntu:
 
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+
 For CentOS:
 
 sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 
 # Step 6: Install Docker
+
 For Ubuntu:
 
 sudo apt update
+
 sudo apt install docker-ce
+
 For CentOS:
 
 sudo yum install docker-ce
 
 # Step 7: Start Docker
+
 Enable and start the Docker service:
 
+
 sudo systemctl start docker
+
 sudo systemctl enable docker
 
 # Step 8: Verify the Installation
+
 Check if Docker is running:
 
 sudo systemctl status docker
+
 You can also run a test container:
 
 sudo docker run hello-world
 
 # Step 9: (Optional) Manage Docker as a Non-Root User
-If you want to run Docker commands without sudo, add your user to the Docker group:
+
+If you want to run Docker commands without sudo, add your user to the 
+
+Docker group:
 
 sudo usermod -aG docker $USER
+
 After running this command, log out and back in for the changes to take effect.
 
 # Conclusion
+
 You’ve successfully installed Docker using PuTTY! If you have any questions or run into issues, feel free to ask.
 
 # container:-
@@ -158,31 +177,38 @@ sudo systemctl status nginx
 
 sudo apt update
 
+
 sudo apt install apache2
+
 [to install a web server on ip then]
 
 sudo su
+
 [for convert $ into # for getting admin role then]
 
 cd /var/www/html/
+
 then
 
 ls
+
 [for list of html file in it]
 
 then copy that html file name and write
 
 rm index.html
+
 [rm means remove command]
 
 vi index.html
+
 [this will open a notepad like and write html code there like (vi is editor) -]
 
 then press ctrl+c then shift+colon then write wq and enter
 
 now copy your public ip and paste it on browser you will see the texts written by you (by using html above)
 
-# congratulations yo got it 👏🏻 🎉 
+# congratulations you got it 👏🏻 🎉 
 
 # USING CONTAINER IN VM and adding nginx server by Docker:- 
 
@@ -201,6 +227,7 @@ newgrp docker
 [this command will help us to use docker]
 
 docker ps
+
 [this will list docker]
 
 docker --version
@@ -208,6 +235,7 @@ docker --version
 [this will display the version of docker installed]
 
 [now installing nginx]
+
 docker pull nginx
 
 -You can download Nginx from a pre-built Docker image, with a default Nginx configuration, by above command. This downloads all the necessary components for the container.
@@ -278,11 +306,17 @@ open your public ip in browser you will see as the content as your html code
 # Orchestration:- 
 
 In cloud computing, orchestration is the process of coordinating and automating the management of applications, tools, and infrastructure across multiple clouds
+ 
+![Screenshot_2024_0923_184155](https://github.com/user-attachments/assets/08cd23e3-bead-46aa-a5be-68cd56fea693)
+
+![Screenshot_2024_0923_184219](https://github.com/user-attachments/assets/75b648c0-2fc1-46c1-b8d0-8ecfb0bd2299)
+
+![Screenshot_2024_0923_183854](https://github.com/user-attachments/assets/6756ddf2-6d9d-4b0d-a4d1-a7aee4ef3afd)
 
 # commands to install minikube :-
+All the following commands are to be written on putty ,so first make sure you are having putty on your system .
 
-
--then 7se the following commands :- 
+-then use the following commands :- 
 
 curl -sL https://github.com/ShubhamTatvamasi/docker-install/raw/master/docker-install.sh | bash
 
@@ -337,6 +371,7 @@ minikube dashboard
 
 
 # links for these commands :-
+(site from which these links are drawn)
 
 https://medium.com/@subhampradhan966/setup-kubernetes-kubectl-and-minikube-on-ubuntu-22-04-lts-ca9e39c35d8a
 
