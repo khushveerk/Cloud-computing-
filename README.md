@@ -353,10 +353,15 @@ Kubernetes (sometimes shortened to K8s with the 8 standing for the number of let
 
 Kubernetes has built-in commands to handle a lot of the heavy lifting that goes into application management, allowing you to automate day-to-day operations. You can make sure applications are always running the way you intended them to run.
 
+![Screenshot_2024_0923_215514](https://github.com/user-attachments/assets/33116348-3bf9-48cb-8403-51f9696905d7)
+
 # Minikube:-
 
 Minikube is a tool that sets up a Kubernetes environment on a local PC or laptop. This tool  provides an easy means of creating a local Kubernetes environment on any Linux, Mac, or Windows system, where you can experiment with and test Kubernetes deployments.
 
+![Screenshot_2024_0923_215611](https://github.com/user-attachments/assets/bbcf6b38-9f8b-4e7e-a768-601033a8df1c)
+
+![Screenshot_2024_0923_215736](https://github.com/user-attachments/assets/c792b3bb-9bda-4b5c-8d80-aa31b3c5b450)
 
 # USING MINIKUBE IN AWS
 
