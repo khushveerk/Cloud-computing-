@@ -322,3 +322,10 @@ minikube dashboard
 https://medium.com/@subhampradhan966/setup-kubernetes-kubectl-and-minikube-on-ubuntu-22-04-lts-ca9e39c35d8a
 
 https://www.linuxbuzz.com/install-minikube-on-ubuntu/
+
+ # for dashboard 
+ minikube dashboard --url
+
+ kubectl proxy --address='0.0.0.0' --disable-filter=true &
+
+ http://server_ip:8001/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy/#/workloads?namespace=default
