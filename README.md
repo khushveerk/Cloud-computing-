@@ -365,7 +365,9 @@ Minikube is a tool that sets up a Kubernetes environment on a local PC or laptop
 
 # USING MINIKUBE IN AWS
 
---First open aws search EC2 then Launch Instance and select 22.04 AMI then select t2.xlarge instance type then select keypair then configure storage to 30 GB then enable all traffic in network and Launch.
+--First open aws search EC2 ,and download your passkey then Launch Instance and select 22.04 AMI then select t2.xlarge instance type then select keypair then configure storage to 30 GB then enable all traffic in network and Launch.
+
+--Launch PuTTY and add the IP address from instance and add key pair file and open the PuTTY terminal.
 
 --Now connect it with putty and login into it by writing ubuntu
 
