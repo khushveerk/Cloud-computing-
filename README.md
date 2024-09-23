@@ -347,6 +347,16 @@ In cloud computing, orchestration is the process of coordinating and automating 
 
 ![Screenshot_2024_0923_183854](https://github.com/user-attachments/assets/6756ddf2-6d9d-4b0d-a4d1-a7aee4ef3afd)
 
+# Kubernestes :- 
+
+Kubernetes (sometimes shortened to K8s with the 8 standing for the number of letters between the “K” and the “s”) is an open source system to deploy, scale, and manage containerized applications anywhere.
+
+Kubernetes has built-in commands to handle a lot of the heavy lifting that goes into application management, allowing you to automate day-to-day operations. You can make sure applications are always running the way you intended them to run.
+
+# Minikube:-
+
+Minikube is a tool that sets up a Kubernetes environment on a local PC or laptop. This tool  provides an easy means of creating a local Kubernetes environment on any Linux, Mac, or Windows system, where you can experiment with and test Kubernetes deployments.
+
 
 # USING MINIKUBE IN AWS
 
