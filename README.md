@@ -463,7 +463,8 @@ minikube dashboard --url**
 # it will get the url and run the dashboard of MiniKube
 
 
-kubectl proxy --address='0.0.0.0' --disable-filter=true &
+''' bash
+kubectl proxy --address='0.0.0.0' --disable-filter=true &'''
 
 
 --This will enable port :8001 to access it on your public ip
