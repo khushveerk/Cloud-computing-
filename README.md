@@ -447,9 +447,8 @@ kubectl get deployment,pod,svc
 --it will deploy a sample nginx deployment
 
 
-'''bash
 minikube addons list
-'''
+
 
 --It will display all addons
 
