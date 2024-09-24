@@ -453,7 +453,9 @@ minikube addons list
 --It will display all addons
 
 
+```bash
 minikube addons enable dashboard
+```
 
 minikube addons enable ingress
 
