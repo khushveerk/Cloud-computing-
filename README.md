@@ -633,3 +633,7 @@ http://server_ip:8001/api/v1/namespaces/kubernetes-dashboard/services/http:kuber
 # KVM 
 # Openstack 
 # QEMU
+
+
+# VPC
+Go to VPC and create a VPC then we have to create 4 subnets , where 2 subnets are private and other two are public .
