@@ -636,4 +636,14 @@ http://server_ip:8001/api/v1/namespaces/kubernetes-dashboard/services/http:kuber
 
 
 # VPC
-Go to VPC and create a VPC then we have to create 4 subnets , where 2 subnets are private and other two are public .
+
+•Go to VPC and create a VPC then we 
+ have to create 4 subnets , where 2     subnets are private and other two are  public .
+
+![Screenshot_2024_1104_181237](https://github.com/user-attachments/assets/25f8774d-56f0-426e-8cf2-eee68511767e)
+
+
+![Screenshot_2024_1104_181126](https://github.com/user-attachments/assets/0512bbc2-f00c-4f5e-b853-63032d26e6e1)
+
+
+•Then create INTERNET GATWAY , whic is  to be connected to your VPC which is   created earliy.
