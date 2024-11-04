@@ -684,4 +684,14 @@ http://server_ip:8001/api/v1/namespaces/kubernetes-dashboard/services/http:kuber
 
 ![Screenshot_2024_1104_183126](https://github.com/user-attachments/assets/1c5a8cf9-ff8d-4565-8968-7d1c0df5920a)
 
-•Now go to any server and type some     commands
+*NOW ON ANY 1 INSTANCE WRITE FOLLOWING COMMANDS IN PUTTY-*
+
+* ```
+  htop
+  ```
+  ```
+  seq 999999999999999999999999999999999999999999999999999999999 > /dev/null &
+  ```
+  ```
+  htop
+  ```
