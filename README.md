@@ -716,3 +716,8 @@ QEMU is an open-source emulator and virtualization tool that allows you to run d
   ```
 
   ![Screenshot_2024_1104_183758](https://github.com/user-attachments/assets/bae13bf3-7e99-4944-86fb-156efc303382)
+
+### book link for reference of VPC given below (page 55 )
+
+{ https://www.scribd.com/document/454176546/AWS-lab-practice-guide-by-www-server-computer-com-v1
+}
