@@ -695,3 +695,5 @@ http://server_ip:8001/api/v1/namespaces/kubernetes-dashboard/services/http:kuber
   ```
   htop
   ```
+
+  ![Screenshot_2024_1104_183758](https://github.com/user-attachments/assets/bae13bf3-7e99-4944-86fb-156efc303382)
