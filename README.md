@@ -630,9 +630,17 @@ http://server_ip:8001/api/v1/namespaces/kubernetes-dashboard/services/http:kuber
 
 ![Screenshot_2024_0923_213426](https://github.com/user-attachments/assets/16ca5aa7-e6db-47d4-b005-2794b6c4289b)
 
-# KVM 
-# Openstack 
+# KVM:- Kernel-based Virtual Machine
+
+It is a technology that allows you to run multiple operating systems on a single physical machine. It turns the Linux kernel into a hypervisor, enabling virtual machines (VMs) to operate as if they were separate computers. 
+
+# Openstack :-
+
+OpenStack is an open-source platform that lets you create and manage cloud computing services. It allows users to control computing power, storage, and networking in a data center through a web interface. Essentially, it helps organizations build their own private or public clouds, making it easier to deploy and manage applications.
+
 # QEMU
+
+QEMU is an open-source emulator and virtualization tool that allows you to run different operating systems on a host machine.
 
 
 # VPC
@@ -645,12 +653,16 @@ http://server_ip:8001/api/v1/namespaces/kubernetes-dashboard/services/http:kuber
 
 ![Screenshot_2024_1104_181126](https://github.com/user-attachments/assets/0512bbc2-f00c-4f5e-b853-63032d26e6e1)
 
+## create  gateways:- 
 
-•Then create INTERNET GATWAY , whic is  to be connected to your VPC which is   created earliy.
+ 1st  create INTERNET GATWAY , whic is  to be connected to your VPC which is   created earliy.
 
 ![Screenshot_2024_1104_181831](https://github.com/user-attachments/assets/a3bb96a9-b738-4031-a65b-d169b25fd263)
 
-•Then we have to create VPG virtual     privaye gate, and connect to VPC .
+
+•2nd we have to create VPG virtual      privaye gate, and connect to VPC .
+
+## create route tables 
 
 •Now we have to go to the route table   and create 2 route table , one for     IGW and another for VGW .
 
@@ -660,8 +672,9 @@ http://server_ip:8001/api/v1/namespaces/kubernetes-dashboard/services/http:kuber
 
 ![Screenshot_2024_1104_182425](https://github.com/user-attachments/assets/555833f8-2889-4028-b563-89596c844143)
 
+## create instances
 
-•now we have to create two instnaces    where we have to enable the public     IPv4 .
+• now we have to create two instnaces    where we have to enable the public     IPv4 .
 
 •then on both instance we have to       downlaod the web server here i have    downlaoded the apache2 server
 
@@ -684,7 +697,7 @@ http://server_ip:8001/api/v1/namespaces/kubernetes-dashboard/services/http:kuber
 
 ![Screenshot_2024_1104_183126](https://github.com/user-attachments/assets/1c5a8cf9-ff8d-4565-8968-7d1c0df5920a)
 
-*NOW ON ANY 1 INSTANCE WRITE FOLLOWING COMMANDS IN PUTTY-*
+*now put on any one instance write following commands in putty -*
 
 * ```
   htop
