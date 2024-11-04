@@ -674,3 +674,14 @@ http://server_ip:8001/api/v1/namespaces/kubernetes-dashboard/services/http:kuber
 --where we have to give vpc, aviablity   zone of the ec2 instance
 
 •then we have to create the target      group where we have to select the two  insatance we have create then we have  to go to helath check edited option    which was present below the load       balancer is create ,then edit it as    given below image
+
+
+![Screenshot_2024_1104_182902](https://github.com/user-attachments/assets/0ae0ab8a-9196-486b-ad41-b9e27c901240)
+
+•after that come to load balancer       where we have to select the target     group which we have created then make  the load balancer , it will look like  the given image below .
+
+![Screenshot_2024_1104_183106](https://github.com/user-attachments/assets/a891ba72-6a20-4f33-89c2-cbe07cd88904)
+
+![Screenshot_2024_1104_183126](https://github.com/user-attachments/assets/1c5a8cf9-ff8d-4565-8968-7d1c0df5920a)
+
+•Now go to any server and type some     commands
