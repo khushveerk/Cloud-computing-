@@ -658,11 +658,16 @@ http://server_ip:8001/api/v1/namespaces/kubernetes-dashboard/services/http:kuber
 
 •Now we have to connect two public      subnet in myigw and on other we have   to add the private subnets .
 
+![Screenshot_2024_1104_182425](https://github.com/user-attachments/assets/555833f8-2889-4028-b563-89596c844143)
+
+
 •now we have to create two instnaces    where we have to enable the public     IPv4 .
 
 •then on both instance we have to       downlaod the web server here i have    downlaoded the apache2 server
 
 -- after that i chech that my             instances are working or not .
+
+![Screenshot_2024_1104_182258](https://github.com/user-attachments/assets/c913fb61-bc91-43d2-bd2a-47fdba5e508e)
 
 ## now we have to create the load         balancer
 
