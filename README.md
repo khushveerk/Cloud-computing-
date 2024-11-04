@@ -647,3 +647,25 @@ http://server_ip:8001/api/v1/namespaces/kubernetes-dashboard/services/http:kuber
 
 
 •Then create INTERNET GATWAY , whic is  to be connected to your VPC which is   created earliy.
+
+![Screenshot_2024_1104_181831](https://github.com/user-attachments/assets/a3bb96a9-b738-4031-a65b-d169b25fd263)
+
+•Then we have to create VPG virtual     privaye gate, and connect to VPC .
+
+•Now we have to go to the route table   and create 2 route table , one for     IGW and another for VGW .
+
+![Screenshot_2024_1104_181847](https://github.com/user-attachments/assets/77c3730e-5cf4-4a0d-a78d-ac070f231688)
+
+•Now we have to connect two public      subnet in myigw and on other we have   to add the private subnets .
+
+•now we have to create two instnaces    where we have to enable the public     IPv4 .
+
+•then on both instance we have to       downlaod the web server here i have    downlaoded the apache2 server
+
+-- after that i chech that my             instances are working or not .
+
+## now we have to create the load         balancer
+
+--where we have to give vpc, aviablity   zone of the ec2 instance
+
+•then we have to create the target      group where we have to select the two  insatance we have create then we have  to go to helath check edited option    which was present below the load       balancer is create ,then edit it as    given below image
