@@ -634,13 +634,19 @@ http://server_ip:8001/api/v1/namespaces/kubernetes-dashboard/services/http:kuber
 
 It is a technology that allows you to run multiple operating systems on a single physical machine. It turns the Linux kernel into a hypervisor, enabling virtual machines (VMs) to operate as if they were separate computers. 
 
+![Screenshot_2024_1104_185025](https://github.com/user-attachments/assets/aea55019-b763-4d9d-b8e1-05dec28115e5)
+
 # Openstack :-
 
 OpenStack is an open-source platform that lets you create and manage cloud computing services. It allows users to control computing power, storage, and networking in a data center through a web interface. Essentially, it helps organizations build their own private or public clouds, making it easier to deploy and manage applications.
 
+![Screenshot_2024_1104_185043](https://github.com/user-attachments/assets/c0c86085-1b3c-4cd3-8276-11adebfbba49)
+
 # QEMU
 
 QEMU is an open-source emulator and virtualization tool that allows you to run different operating systems on a host machine.
+
+![Screenshot_2024_1104_185120](https://github.com/user-attachments/assets/0a1473de-99d1-4119-b9dd-236278fd6341)
 
 
 # VPC
