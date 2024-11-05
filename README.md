@@ -721,3 +721,13 @@ QEMU is an open-source emulator and virtualization tool that allows you to run d
 
 { https://www.scribd.com/document/454176546/AWS-lab-practice-guide-by-www-server-computer-com-v1
 }
+
+
+
+
+
+# NETWORKING 
+
+
+
+
