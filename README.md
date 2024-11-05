@@ -933,7 +933,12 @@ set of rules that determine how the packet is to be transferred and received and
 
 ![Screenshot_2024_1105_053100](https://github.com/user-attachments/assets/8d9e9c19-688d-47a9-9989-cd436cee851f)
 
-  
+## Packet flow, also known as network flow or traffic flow:- 
+
+it is the sequence of packets that travel from a source computer to a destination.
+
+•Packets are segments of data that are routed through a network of interconnected devices, such as switches and routers, before reaching their destination. 
+
 --below images shows network setup for packet flow 
 
 ![Screenshot_2024_1105_053158](https://github.com/user-attachments/assets/13ed4b6d-3535-424e-8164-9d480751e39b)
