@@ -449,6 +449,8 @@ docker restart docker-nginx
 
 # Orchestration:- 
 
+![Screenshot_2024_1105_150225](https://github.com/user-attachments/assets/7847eed5-c47a-48c3-911b-97b6c47af9c8)
+
 In cloud computing, orchestration is the process of coordinating and automating the management of applications, tools, and infrastructure across multiple clouds
  
 ![Screenshot_2024_0923_184155](https://github.com/user-attachments/assets/08cd23e3-bead-46aa-a5be-68cd56fea693)
