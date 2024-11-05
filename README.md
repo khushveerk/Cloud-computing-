@@ -739,6 +739,8 @@ QEMU is an open-source emulator and virtualization tool that allows you to run d
 
 ### types of network 
 
+![Screenshot_2024_1105_071234](https://github.com/user-attachments/assets/756402b9-6449-449b-aa2f-5ed46c23f185)
+
 ![Screenshot_2024_1105_050930](https://github.com/user-attachments/assets/1bfa85e4-0476-4afa-ba21-d909617fbffa)
 
 
@@ -773,67 +775,67 @@ used to create a user space network bridge.
    
 ## Basic terms for understanding networking better:- 
 
-### NAT :- 
+## 1.NAT :- 
 
 it is a process in which one or more local IP addresses are translated into one or more global IP addresses and vice versa
 
-### veth :-
+## 2. veth :-
 
 these are pair of virtual network interfaces that are used to connect network namespaces together.
 
-### DPDK :- Data Plane Development Kit
+## 3.DPDK :- Data Plane Development Kit
 
 it is a set of libraries and drivers that accelerates packet processing and their ability to create packet forwarders without the need of costly custom switches and routers
 
- ### NIC :- network interface card 
+ ## 4. NIC :- network interface card 
 
  It allows one device to connect to     network
 
- ### DPU :- Data Processing Unit 
+ ## 5. DPU :- Data Processing Unit 
 
  it is a new programmable processor that helps move data around data centres. it ensures right data goes to right place in right format quickly .
 
-### CSI :- Container Storage Interface 
+## 6.CSI :- Container Storage Interface 
 
 
-### OVS :- Open virtual switch 
+## 7. OVS :- Open virtual switch 
 
 it is used with hypervisors to interconnect virtual machines within a host and between different hosts accross networks.
 
-### QEMU :- Quick emulator 
+## 8. QEMU :- Quick emulator 
 
 free open source machine it can run various guest operating systems (OS's ) and architecture on a single host system.
 
-### Docker :- 
+## 9. Docker :- 
 
 it is like a container that holds everything your application needs to run including the code, libraries.
 
-### Kubernets :- 
+## 10. Kubernets :- 
 
 it is like a manager for containers .it helps to deploy, scale and manage a group of containers making sure they run smoothly.
 
-### web assembly:- (WASM)
+## 11. web assembly:- (WASM)
 
 technology that allows you to run code written in different programming languages. It is a way to build high speed, responsive web applications that can handle data and communicate over networks.
 
-### Firewall :- 
+## 12. Firewall :- 
 security system that controls incoming and outgoing network traffic based on pre- determined security rules.
 
-### VxLAN :- 
+## 13.  VxLAN :- 
 It is tunneling report that tunnel Ethernet traffic (layer 2) over an IP network(layer 3).
 
-  #### VTEP:- 
+  ### 13.1 VTEP:- 
    it is a device that's responsible      for encapsulating and de-capsulating
    layer 2 traffic.
 
-### LINUX Bridge :- 
+## 14. LINUX Bridge :- 
 
 it is a kernel module that behaves like a network switch .It is usually used for forwarding packages on routes or gateways or between virtual machines.
 
-### Pktgen :- 
+## 15. Pktgen :- 
 it is a tool for high speed package generation and testing. It  in the Linux kernel.
 
-#### netns :- network namespace 
+### netns :- network namespace 
  feature of Linux kernel that provides a way to create isolated network environment.
 
 ***TAP is often used to connect VM or containers to a physical network***
@@ -862,17 +864,25 @@ it acts as a layer that allows containers to send and receive data seamlessly ac
 
 when we send email or web page the data does not travel as single continuous stream instead is broken down into smaller chunks called packets .
 
+![Screenshot_2024_1105_051355](https://github.com/user-attachments/assets/74909f19-be19-4184-b598-b27aacb28201)
+
 ## key functions of network core :-
 
 ## 1. Forwarding :- 
   
 • it is a local action of moving and     arriving packets from a router's       input to appropriate router output     link.
 
+![Screenshot_2024_1105_051744](https://github.com/user-attachments/assets/fde5e9bc-24d6-47e6-ae97-f2328b3c70a2)
+
 ## 2. Routing :- 
  • global process of determining the      full paths packets take from source    to destination
 
+![Screenshot_2024_1105_052007](https://github.com/user-attachments/assets/fa851427-6a16-49ae-91e7-a5948adeafd7)
+
 ## Network Protocols:- 
 set of rules that determine how the packet is to be transferred and received and in which format .
+
+![Screenshot_2024_1105_052254](https://github.com/user-attachments/assets/1e091aaf-5a0f-46d5-a8ed-4d8cffa2959a)
 
 ### 1. TCP 
  
@@ -881,18 +891,28 @@ set of rules that determine how the packet is to be transferred and received and
 ### 2. IP 
 
  responsible for addressing and routing packets across the internet. 
+
+![Screenshot_2024_1105_052610](https://github.com/user-attachments/assets/c836af5c-8b7a-48e2-ab47-2a5d79e26cf0)
  
 ### 3. HTTP 
 
  it is a protocol that powers the world wide web defining how messages are formatted and transmitted between web browsers and servers.
+ 
+![Screenshot_2024_1105_052748](https://github.com/user-attachments/assets/36b42701-141d-4c01-862c-7cf88312181d)
 
 ## NETWORK STACK 
+
+![Screenshot_2024_1105_052830](https://github.com/user-attachments/assets/fd2c6097-dec2-4214-8325-163034aa4b82)
+
 
  ### TCP /IP 
  provide reliable transmission of       data. 
 
  ### UDP 
   provides faster but less reliable      transmission of data.
+
+
+
   
 --below images shows network setup for packet flow 
 
