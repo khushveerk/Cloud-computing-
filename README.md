@@ -823,8 +823,66 @@ it is a kernel module that behaves like a network switch .It is usually used for
 it is a tool for high speed package generation and testing. It  in the Linux kernel.
 
 #### netns :- network namespace 
- piche ka Linux kernel that provides a way to create isolated network environment.
+ feature of Linux kernel that provides a way to create isolated network environment.
 
+***TAP is often used to connect VM or containers to a physical network***
+
+## KVM :- kernel virtual machine 
+( typer 1 hypervisor)
+
+
+## CNI :- Container Networking Bridge 
+
+it is responsible for setting up the network ( assigning IP address, create network bridge) for containers ,enabling communication between containers and outside world
+
+***examples***
+VLAN , IPvLAN , CALICO , FLANNEL , VMware. etc 
+
+### Flannel :- 
+it acts as a layer that allows containers to send and receive data seamlessly accross various hosts .
+ 
+  ### working:- 
+  it runs a small single binary agent    on every host.
+  this networking tool gives every       host an IP subnet.
+
+  
+
+## Packet Switching:- 
+
+when we send email or web page the data does not travel as single continuous stream instead is broken down into smaller chunks called packets .
+
+## key functions of network core :-
+
+## 1. Forwarding :- 
+  
+• it is a local action of moving and     arriving packets from a router's       input to appropriate router output     link.
+
+## 2. Routing :- 
+ • global process of determining the      full paths packets take from source    to destination
+
+## Network Protocols:- 
+set of rules that determine how the packet is to be transferred and received and in which format .
+
+### 1. TCP 
+ 
+  it ensures reliable order delivery of data between applications . It handles things like breaking data into packets
+
+### 2. IP 
+
+ responsible for addressing and routing packets across the internet. 
+ 
+### 3. HTTP 
+
+ it is a protocol that powers the world wide web defining how messages are formatted and transmitted between web browsers and servers.
+
+## NETWORK STACK 
+
+ ### TCP /IP 
+ provide reliable transmission of       data. 
+
+ ### UDP 
+  provides faster but less reliable      transmission of data.
+  
 
 
 
