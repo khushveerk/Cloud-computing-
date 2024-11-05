@@ -821,18 +821,27 @@ technology that allows you to run code written in different programming language
 ## 12. Firewall :- 
 security system that controls incoming and outgoing network traffic based on pre- determined security rules.
 
-## 13.  VxLAN :- 
+## 13. DMZ :- 
+
+![Screenshot_2024_1105_054418](https://github.com/user-attachments/assets/3272f7eb-6310-4ff7-91ab-5eaf039eb3ae)
+
+ 
+![Screenshot_2024_1105_054347](https://github.com/user-attachments/assets/bd343550-a15b-485c-a9c5-46ec430901b3)
+
+
+
+## 14.  VxLAN :- 
 It is tunneling report that tunnel Ethernet traffic (layer 2) over an IP network(layer 3).
 
-  ### 13.1 VTEP:- 
+  ### 14.1 VTEP:- 
    it is a device that's responsible      for encapsulating and de-capsulating
    layer 2 traffic.
 
-## 14. LINUX Bridge :- 
+## 15. LINUX Bridge :- 
 
 it is a kernel module that behaves like a network switch .It is usually used for forwarding packages on routes or gateways or between virtual machines.
 
-## 15. Pktgen :- 
+## 16. Pktgen :- 
 it is a tool for high speed package generation and testing. It  in the Linux kernel.
 
 ### netns :- network namespace 
@@ -911,10 +920,20 @@ set of rules that determine how the packet is to be transferred and received and
  ### UDP 
   provides faster but less reliable      transmission of data.
 
+![Screenshot_2024_1105_052918](https://github.com/user-attachments/assets/a1e56df2-7b6e-4e6f-b1d3-2f03495e72ca).
 
+![Screenshot_2024_1105_052948](https://github.com/user-attachments/assets/88f542b9-801f-4c32-bc7f-83a217d39e79)
+
+![Screenshot_2024_1105_053100](https://github.com/user-attachments/assets/8d9e9c19-688d-47a9-9989-cd436cee851f)
 
   
 --below images shows network setup for packet flow 
+
+![Screenshot_2024_1105_053158](https://github.com/user-attachments/assets/13ed4b6d-3535-424e-8164-9d480751e39b)
+
+![Screenshot_2024_1105_053234](https://github.com/user-attachments/assets/b407425a-12ba-470a-afb3-f3bca7ca0325)
+
+
 
 ![Screenshot_2024_1105_053413](https://github.com/user-attachments/assets/becaac0f-c161-4f79-8af0-4978b78d677b)
 
