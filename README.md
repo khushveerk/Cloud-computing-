@@ -34,7 +34,7 @@ Docker works by providing a standard way to run your code. Docker is an operatin
 
 # What is the structure of a Docker image?:- 
 
-A Docker image is composed of multiple layers stacked on top of each other. Each layer represents a specific modification to the file system (inside the container), such as adding a new file or modifying an existing one. Once a layer is created, it becomes immutable, meaning it can't be changed.16 May 2023
+A Docker image is composed of multiple layers stacked on top of each other. Each layer represents a specific modification to the file system (inside the container), such as adding a new file or modifying an existing one. Once a layer is created, it becomes immutable, meaning it can't be changed.
 
 ![Screenshot_2024_0918_124113](https://github.com/user-attachments/assets/57b191a7-c6aa-40d8-ae5b-336b9d8a8029)
 
@@ -656,6 +656,12 @@ QEMU is an open-source emulator and virtualization tool that allows you to run d
 
 # VPC
 
+Amazon Virtual Private Cloud (VPC) is a virtual network that allows users to launch AWS resources in a logically isolated environment. It's a foundational service of AWS that gives users complete control over their virtual networking environment. 
+
+### What is the difference between EC2 and VPC?
+
+•EC2 is a virtual server that you can run your software on. VPC is a virtual network that you use to connect your virtual servers, and other resources.
+
 •Go to VPC and create a VPC then we 
  have to create 4 subnets , where 2     subnets are private and other two are  public .
 
@@ -752,20 +758,26 @@ QEMU is an open-source emulator and virtualization tool that allows you to run d
 ## Network Devices:-
 
 ### 1. network adaptor/ interface 
+   
    • connects a device to network. 
+   
    • has a Mac address by manufacturer 
+   
    • second layer device 
 
 ### 2. switch 
    •it is a very multiport network         bridge that uses MAC address to        forward data
+   
    •link layer device 
 
 ### 3. Router 
    •it is a device that forwards          data between computer networks
+ 
    • 3rd layer device 
 
 ### 4. HUB 
    •network device that used to            connect multiple computers in a        network 
+ 
    • all information send to the hub       is automatically send to each port     to every device 
 
 ### 5. TAP
