@@ -281,7 +281,12 @@ vi index.html
 
 First open aws search EC2 then Launch Instance and there select keypair in putty then download it
 
-after that edit network setting and click on add security group rule and select TCP,UDP,ALL TRAFFIC AND SELECT EVERYWHERE SOURCE TYPE IN THEM then Launch it and run putty and paste public id on HOST NAME and open that downloaded key pair for putty in SSH then Auth then Credentials and open there
+after that edit network setting and click on add security group rule and select TCP,UDP,ALL TRAFFIC AND SELECT EVERYWHERE SOURCE TYPE IN THEM then Launch it and run putty and paste public id on HOST NAME and open that downloaded key pair for putty in SSH 
+
+
+(SSH (Secure Shell) is a way to securely connect to another computer over a network. It's like a safe tunnel that allows you to control a remote computer and transfer files to it, without anyone else being able to listen in or interfere with the connection.)
+
+then Auth then Credentials and open there
 
 after that run it and write username as ubuntu as selected os and then type following commands
 
