@@ -810,9 +810,14 @@ free open source machine it can run various guest operating systems (OS's ) and 
 
 it is like a container that holds everything your application needs to run including the code, libraries.
 
+![Screenshot_2024_0918_124023](https://github.com/user-attachments/assets/03fdbbef-5f0d-4a17-8797-f8e8ca8a5f58)
+ 
+
 ## 10. Kubernets :- 
 
 it is like a manager for containers .it helps to deploy, scale and manage a group of containers making sure they run smoothly.
+
+![Screenshot_2024_0923_215514](https://github.com/user-attachments/assets/33116348-3bf9-48cb-8403-51f9696905d7)
 
 ## 11. web assembly:- (WASM)
 
