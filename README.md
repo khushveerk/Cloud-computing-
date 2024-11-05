@@ -967,4 +967,6 @@ it is the sequence of packets that travel from a source computer to a destinatio
 
 ![Screenshot_2024_1105_053413](https://github.com/user-attachments/assets/becaac0f-c161-4f79-8af0-4978b78d677b)
 
+## Explanation:-
 
+user1 wants to send data user2 does the data is broken down into packets. user1 don't know the MAC address user2 but it show the Mac address of the gateway. show the packets are put it into frame which have MAC address of the router.
