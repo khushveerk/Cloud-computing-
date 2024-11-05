@@ -662,8 +662,7 @@ Amazon Virtual Private Cloud (VPC) is a virtual network that allows users to lau
 
 •EC2 is a virtual server that you can run your software on. VPC is a virtual network that you use to connect your virtual servers, and other resources.
 
-•Go to VPC and create a VPC then we 
- have to create 4 subnets , where 2     subnets are private and other two are  public .
+### Go to VPC and create a VPC then we  have to create 4 subnets , where 2     subnets are private and other two are  public .
 
 ![Screenshot_2024_1104_181237](https://github.com/user-attachments/assets/25f8774d-56f0-426e-8cf2-eee68511767e)
 
