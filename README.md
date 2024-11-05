@@ -731,6 +731,17 @@ QEMU is an open-source emulator and virtualization tool that allows you to run d
 ![Screenshot_2024_1105_055827](https://github.com/user-attachments/assets/e060004d-ad36-482b-9128-ad60ad5ee88a)
 
 
+## what is client and server 
+( below image shows this )
+
+![Screenshot_2024_1105_050813](https://github.com/user-attachments/assets/6246f115-7109-4ec4-87a4-e466770f5e7c)
+
+
+### types of network 
+
+![Screenshot_2024_1105_050930](https://github.com/user-attachments/assets/1bfa85e4-0476-4afa-ba21-d909617fbffa)
+
+
 ## Network Devices:-
 
 ### 1. network adaptor/ interface 
@@ -883,6 +894,8 @@ set of rules that determine how the packet is to be transferred and received and
  ### UDP 
   provides faster but less reliable      transmission of data.
   
+--below images shows network setup for packet flow 
 
+![Screenshot_2024_1105_053413](https://github.com/user-attachments/assets/becaac0f-c161-4f79-8af0-4978b78d677b)
 
 
