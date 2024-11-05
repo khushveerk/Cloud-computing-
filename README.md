@@ -723,10 +723,107 @@ QEMU is an open-source emulator and virtualization tool that allows you to run d
 }
 
 
-
+![Screenshot_2024_1105_055750](https://github.com/user-attachments/assets/268cad3b-5081-4e9b-9f17-a5aa70d6de41)
 
 
 # NETWORKING 
+
+![Screenshot_2024_1105_055827](https://github.com/user-attachments/assets/e060004d-ad36-482b-9128-ad60ad5ee88a)
+
+
+## Network Devices:-
+
+### 1. network adaptor/ interface 
+   • connects a device to network. 
+   • has a Mac address by manufacturer 
+   • second layer device 
+
+### 2. switch 
+   •it is a very multiport network         bridge that uses MAC address to        forward data
+   •link layer device 
+
+### 3. Router 
+   •it is a device that forwards          data between computer networks
+   • 3rd layer device 
+
+### 4. HUB 
+   •network device that used to            connect multiple computers in a        network 
+   • all information send to the hub       is automatically send to each port     to every device 
+
+### 5. TAP
+  (WORKS ON LAYER 2 -- ethernet frame )
+
+used to create a user space network bridge.
+
+### 6. TUN 
+ ( WORKS ON LAYER 3 -- IP packets )
+
+ create a tunnel network to reach       another network .
+   
+## Basic terms for understanding networking better:- 
+
+### NAT :- 
+
+it is a process in which one or more local IP addresses are translated into one or more global IP addresses and vice versa
+
+### veth :-
+
+these are pair of virtual network interfaces that are used to connect network namespaces together.
+
+### DPDK :- Data Plane Development Kit
+
+it is a set of libraries and drivers that accelerates packet processing and their ability to create packet forwarders without the need of costly custom switches and routers
+
+ ### NIC :- network interface card 
+
+ It allows one device to connect to     network
+
+ ### DPU :- Data Processing Unit 
+
+ it is a new programmable processor that helps move data around data centres. it ensures right data goes to right place in right format quickly .
+
+### CSI :- Container Storage Interface 
+
+
+### OVS :- Open virtual switch 
+
+it is used with hypervisors to interconnect virtual machines within a host and between different hosts accross networks.
+
+### QEMU :- Quick emulator 
+
+free open source machine it can run various guest operating systems (OS's ) and architecture on a single host system.
+
+### Docker :- 
+
+it is like a container that holds everything your application needs to run including the code, libraries.
+
+### Kubernets :- 
+
+it is like a manager for containers .it helps to deploy, scale and manage a group of containers making sure they run smoothly.
+
+### web assembly:- (WASM)
+
+technology that allows you to run code written in different programming languages. It is a way to build high speed, responsive web applications that can handle data and communicate over networks.
+
+### Firewall :- 
+security system that controls incoming and outgoing network traffic based on pre- determined security rules.
+
+### VxLAN :- 
+It is tunneling report that tunnel Ethernet traffic (layer 2) over an IP network(layer 3).
+
+  #### VTEP:- 
+   it is a device that's responsible      for encapsulating and de-capsulating
+   layer 2 traffic.
+
+### LINUX Bridge :- 
+
+it is a kernel module that behaves like a network switch .It is usually used for forwarding packages on routes or gateways or between virtual machines.
+
+### Pktgen :- 
+it is a tool for high speed package generation and testing. It  in the Linux kernel.
+
+#### netns :- network namespace 
+ piche ka Linux kernel that provides a way to create isolated network environment.
 
 
 
