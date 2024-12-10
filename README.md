@@ -727,6 +727,7 @@ Amazon Virtual Private Cloud (VPC) is a virtual network that allows users to lau
   htop
   ```
 
+![Screenshot 2024-12-09 124955](https://github.com/user-attachments/assets/6854d7e6-2631-497d-9ca1-d01c2b8ee316)
 
 
 ### book link for reference of VPC given below (page 55 )
